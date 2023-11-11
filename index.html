@@ -123,167 +123,67 @@
             <div class="header">
                 <h2>Create Account</h2>
             </div>
-            <!-- 
-            <form class="form-floating">
-                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com"
-                    value="test@example.com">
-                <label for="floatingInputValue">Input with value</label>
-            </form> -->
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
-
-            <form>
-                <div class="form-floating mb-3">
-                    <input class="form-control" name="firstName" type="text" required id="floatingInputValue" />
-                    <label for="floatingInputValue" class="form-label">FIRST NAME</label>
-                    <!-- <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small> -->
-                </div>
-
-
-                <div class="mb-3">
-                    <label class="form-label" for="lastName"></label>
-                    <input class="form-control" name="lastName" type="text" required placeholder="LAST NAME"
-                        id="lastName" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
-
-
-                <div class="mb-3">
-                    <label class="form-label" for="email"></label>
-                    <input class="form-control" name="email" type="email" required placeholder="EMAIL"
-                        pattern=" .+?[@]bigcorp[.]eu$" id="email" aria-describedby="emailHelp" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
-
-
-                <div class="mb-3">
-                    <label class="form-label" for="phoneNumber"></label>
-                    <input class="form-control" name="phoneNumber" type="number" required placeholder="PHONE NUMBER"
-                        id="phoneNumber" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label" for="password"></label>
-                    <input class="form-control" name="password" type="password" placeholder="PASSWORD" required
-                        minlength=8 maxlength=16 pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$"
-                        id="password" />
-                    <span class="showP">
-                        <input class="toogle" type="checkbox" onclick="Toggle()">
-                        <b class="showT">Show Password</b>
-                    </span>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
-
-
-                <div class="mb-3">
-                    <label class="form-label" for="password2"></label>
-                    <input class="form-control" name="password2" type="password" placeholder="CONFIRM PASSWORD" required
-                        id="password2" />
-                    <span class="showP">
-                        <input type="checkbox" class="toogle" onclick="Toggle2()">
-                        <b class="showT">Show Password</b>
-                    </span>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Enter the future</button>
-            </form>
-
             <form class="container text-center">
                 <div class="row">
                     <div class="col">
-                        <div class="mb-3">
-                            <label for="firstName" class="form-label">FIRST NAME</label>
-                            <input class="form-control" name="firstName" type="text" required id="firstName" />
-                            <i class="fas fa-check-circle"></i>
-                            <i class="fas fa-exclamation-circle"></i>
-                            <small>Error message</small>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="firstName" type="text" required id="firstName"
+                                placeholder="Gary" />
+                            <label for="firstName" class="form-label">First Name</label>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="mb-3">
-                            <label class="form-label" for="lastName"></label>
-                            <input class="form-control" name="lastName" type="text" required placeholder="LAST NAME"
-                                id="lastName" />
-                            <i class="fas fa-check-circle"></i>
-                            <i class="fas fa-exclamation-circle"></i>
-                            <small>Error message</small>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="lastName" type="text" required id="lastName"
+                                placeholder="Host" />
+                            <label class="form-label" for="lastName">Last Name</label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="mb-3">
-                            <label class="form-label" for="email"></label>
-                            <input class="form-control" name="email" type="email" required placeholder="EMAIL"
-                                pattern=" .+?[@]bigcorp[.]eu$" id="email" aria-describedby="emailHelp" />
-                            <i class="fas fa-check-circle"></i>
-                            <i class="fas fa-exclamation-circle"></i>
-                            <small>Error message</small>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" name="email" type="email" required
+                                placeholder="email@something.com" id="email" aria-describedby="emailHelp" />
+                            <label class="form-label" for="email">Email</label>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="mb-3">
-                            <label class="form-label" for="phoneNumber"></label>
+                        <div class="form-floating  mb-3">
                             <input class="form-control" name="phoneNumber" type="number" required
-                                placeholder="PHONE NUMBER" id="phoneNumber" />
-                            <i class="fas fa-check-circle"></i>
-                            <i class="fas fa-exclamation-circle"></i>
-                            <small>Error message</small>
+                                placeholder="0512345968" id="phoneNumber" />
+                            <label class="form-label" for="phoneNumber">Phone Number</label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="mb-3">
-                            <label class="form-label" for="password"></label>
-                            <input class="form-control" name="password" type="password" placeholder="PASSWORD" required
-                                minlength=8 maxlength=16
-                                pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" id="password" />
+                        <div class="form-floating  mb-3">
+                            <input class="form-control" name="password" type="password" required minlength=8
+                                maxlength=16 id="password" placeholder="some strong password" />
+                            <label class="form-label" for="password">Password</label>
+
                             <span class="showP">
-                                <input class="toogle" type="checkbox" onclick="Toggle()">
+                                <input class="form-check-input mt-0 toogle" type="checkbox" onclick="Toggle()"
+                                    aria-label="show password">
                                 <b class="showT">Show Password</b>
                             </span>
-                            <i class="fas fa-check-circle"></i>
-                            <i class="fas fa-exclamation-circle"></i>
-                            <small>Error message</small>
+
                         </div>
                     </div>
                     <div class="col">
-                        <div class="mb-3">
-                            <label class="form-label" for="password2"></label>
-                            <input class="form-control" name="password2" type="password" placeholder="CONFIRM PASSWORD"
-                                required id="password2" />
+                        <div class="form-floating  mb-3">
+                            <input class="form-control" name="password2" type="password" required id="password2"
+                                placeholder="possibly the same strong password" />
+                            <label class="form-label" for="password2">Password check</label>
                             <span class="showP">
                                 <input type="checkbox" class="toogle" onclick="Toggle2()">
                                 <b class="showT">Show Password</b>
                             </span>
-                            <i class="fas fa-check-circle"></i>
-                            <i class="fas fa-exclamation-circle"></i>
-                            <small>Error message</small>
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Enter the future</button>
+                <button type="submit" class="btn btn-primary">Get Started</button>
             </form>
         </div>
     </div>
